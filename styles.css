@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 24px;
+}
+
+.bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 437px;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.bg-pattern .mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 194px;
+    z-index: -1;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 450px) {
+
+    .mobile {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+
+    .desktop {
+        display: none;
+    }
+    
+    .content {
+      padding: 24px 24px 32px 24px !important;
+    }
+
+    .title {
+        padding: 0 8px;
+    }
+
+    .title h1 {
+        font-size: 22px;
+    }
+
+    .title p {
+        font-size: 15px;
+    }
+
+    .plan-card {
+        padding: 16px !important;
+    }
+
+    .plan-card h2 {
+        font-size: 14px;
+    }
+
+    .plan-card p {
+        font-size: 14px;
+    }
+
+    .plan-card a {
+        font-size: 13px;
+    }
+
+
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    overflow: hidden;
+}
+
+.container .hero-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 40px 48px 48px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    color: var(--dark-blue);
+}
+
+.title p {
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.plan-card {
+    border-radius: 11px;
+    background: var(--very-pale-blue);
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex-grow: 1;
+}
+
+.plan-card h2{
+    color: var(--dark-blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.plan-card p {
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.plan-card a{
+    color: var(--bright-blue);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    transition: all 0.3s ease;
+}
+
+.plan-card a:hover{
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    text-align: center;
+}
+
+.cta .main-cta {
+    background: var(--bright-blue);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 15px 32px;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 11px;
+    background: #382AE1;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+    transition: all 0.3s ease;
+}
+
+.cta .main-cta:hover {
+    background: #766CF1;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+
+.cta .secondary-cta {
+    color: #717FA6;
+    font-family: "Red Hat Display";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta .secondary-cta:hover{
+    color: #1F2E55;
+}
