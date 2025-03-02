@@ -64,10 +64,6 @@ body {
       padding: 24px 24px 32px 24px !important;
     }
 
-    .title {
-        padding: 0 8px;
-    }
-
     .title h1 {
         font-size: 22px;
     }
@@ -125,6 +121,7 @@ body {
     text-align: center;
     flex-direction: column;
     gap: 8px;
+    padding: 0 8px;
 }
 
 .title h1 {
@@ -139,7 +136,7 @@ body {
     color: var(--desaturated-blue);
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 26px; /* 162.5% */
 }
 
@@ -172,7 +169,7 @@ body {
     color: var(--desaturated-blue);
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
 }
 
