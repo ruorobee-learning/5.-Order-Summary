@@ -34,6 +34,7 @@ body {
     height: 437px;
     z-index: -1;
     object-fit: cover;
+    object-position: bottom;
 }
 
 .bg-pattern .mobile {
@@ -44,6 +45,7 @@ body {
     height: 194px;
     z-index: -1;
     object-fit: cover;
+    object-position: bottom;
 }
 
 @media screen and (min-width: 450px) {
